@@ -1,0 +1,47 @@
+.social {
+  bottom: 20px;
+  position: fixed;
+  right: 20px;
+}
+
+.social a {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 32px;
+  margin: 0 10px;
+  opacity: .9;
+  width: 32px;
+}
+
+.social a:hover {
+  opacity: 1;
+}
+
+.social .discord {
+  background-image: url(/images/icons/discord-icon.svg);
+}
+
+.social .etherscan {
+  background-image: url(/images/icons/etherscan-icon.svg);
+}
+
+.social .opensea {
+  background-image: url(/images/icons/opensea-icon.svg);
+}
+
+.social .telegram {
+  background-image: url(/images/icons/telegram-icon.svg);
+}
+
+.social .twitter {
+  background-image: url(/images/icons/twitter-icon.svg);
+}
+
+@media screen and (max-width: 1100px) {
+  .social {
+    padding: 20px 0;
+    position: static;
+  }
+}

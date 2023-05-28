@@ -1,0 +1,422 @@
+.buy {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0 0;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.content {
+  font-size: 22px;
+  text-align: center;
+}
+
+.content h3 {
+  color: #c1ab70;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 400px) {
+  .content h3 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .content h3 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 240px) {
+  .content h3 {
+    font-size: 8px;
+  }
+}
+
+.content p {
+  font-size: 20px;
+  margin: 15px 0 20px 0;
+}
+
+.date {
+  color: #c1ab70;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 800px) {
+  .date {
+    font-size: 14px !important;
+  }
+}
+
+.dateContainer {
+  margin: 30px 0 0 0;
+}
+
+.dateLine {
+  background: #cba790;
+  background: linear-gradient(
+    270deg,
+    rgba(203, 167, 144, 0) 1.7%,
+    #cba790 20.64%,
+    #cba790 84.81%,
+    rgba(203, 167, 144, 0) 102.7%
+  );
+  content: ". ";
+  height: 1px;
+  margin: 5px 0;
+}
+
+.error {
+  background-color: #ff6666;
+  bottom: 0;
+  color: white;
+  font-size: 16px;
+  left: 0;
+  padding: 20px;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 999;
+}
+
+.error button {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+
+@media screen and (max-width: 1100px) {
+  .error {
+    font-size: 14px;
+  }
+
+  .error button {
+    top: 5px;
+  }
+}
+
+.input {
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 10px 32px 10px 10px;
+  width: 100px;
+}
+
+.invite {
+  position: relative;
+}
+
+.inviteButton {
+  background: none;
+  background-image: url(/images/icons/right-arrow-icon.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 18px auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin: 0;
+  position: absolute;
+  right: 5px;
+  height: 32px;
+  top: 4px;
+  width: 32px;
+}
+
+.inviteCode {
+  font-size: 32px;
+  text-align: right;
+}
+
+.inviteCount {
+  font-size: 12px;
+  text-align: right;
+}
+
+.message {
+  align-items: center;
+  display: flex;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  .message {
+    flex-direction: column-reverse;
+    margin-top: 100px;
+  }
+}
+
+.message h4 {
+  font-size: 48px;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 400px) {
+  .message h4 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .message h4 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 240px) {
+  .message h4 {
+    font-size: 18px;
+  }
+}
+
+.messageContent {
+  flex-grow: 1;
+  margin-right: 40px;
+  text-align: left;
+  z-index: 1;
+
+  p {
+    color: gray;
+    font-size: 18px;
+  }
+
+  ul {
+    color: gray;
+  }
+  
+  li {
+    background: url(/images/icons/check-icon.svg) no-repeat left top;
+    font-size: 14px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0 0 10px 0;
+    padding: 2px 0px 3px 32px;
+
+    @media screen and (max-width: 400px) {
+      background: url(/images/icons/check-icon.svg) no-repeat left top 4px;
+      font-size: 10px;
+      padding: 0 0px 3px 32px;
+    }
+  }
+
+  h6 {
+    color: gray;
+    margin: 15px 0 0 0;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 1100px) {
+    margin-right: 0;
+  }
+}
+
+.multiply {
+  margin: 0 20px;
+}
+
+.note {
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.quantity {
+  border: 1px #cba790 solid;
+  border-radius: 6px;
+  font-size: 18px;
+  margin: 0;
+  padding: 14px;
+  text-align: center;
+  width: 80px;
+}
+
+.quantityAdd,
+.quantitySubtract {
+  background: none;
+  color: #cba790;
+  font-size: 24px;
+  height: 100%;
+  margin: 0;
+  opacity: 0.75;
+  position: absolute;
+  top: 0;
+  width: 36px;
+}
+
+.quantityAdd:hover,
+.quantitySubtract:hover {
+  opacity: 1;
+}
+
+.quantityAdd:disabled,
+.quantitySubtract:disabled {
+  background: none !important;
+}
+
+.quantityAdd {
+  right: 0;
+}
+
+.quantitySubtract {
+  left: 0;
+}
+
+.quantityContainer {
+  position: relative;
+}
+
+.presaleLimit {
+  color: #999;
+  font-size: 16px;
+}
+
+.presaleList {
+  list-style: none;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.presaleList li {
+  align-items: center;
+  display: flex;
+  height: 70px;
+}
+
+.presaleList li label {
+  background-image: url(/images/icons/empty-circle-icon.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  flex-grow: 1;
+  cursor: text;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 0 0 42px;
+  text-align: left;
+}
+
+.presaleList li label.complete {
+  background-image: url(/images/icons/complete-icon.svg);
+}
+
+.presaleList li form {
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+  .presaleList {
+    font-size: 18px;
+  }
+}
+
+.remainingCount {
+  font-size: 16px;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+.selectMode {
+  display: flex;
+}
+
+.selectModeContainer {
+  width: 50%;
+}
+
+.selectModeText {
+  display: block;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.starsButton {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 999;
+}
+
+.starsButton div:last-of-type {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .starsButton {
+    right: 20px;
+  }
+
+  .starsButton button {
+    background: none !important;
+    background-image: url(/images/star.svg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    border-radius: 0;
+    color: transparent !important;
+    height: 44px;
+    line-height: 44px;
+    overflow: hidden;
+    padding: 0;
+    width: 44px;
+  }
+
+  .starsButton div:first-of-type {
+    display: none;
+  }
+
+  .starsButton div:last-of-type {
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline;
+  }
+}
+
+.stepValue {
+  font-weight: bold;
+}
+
+.success {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.success h2 {
+  font-size: 36px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.success p {
+  font-size: 24px;
+}
+
+.video {
+  border-radius: 10px;
+  height: 70vh;
+
+  @media screen and (max-width: 1100px) {
+    margin: 0 0 20px 0;
+  }
+}

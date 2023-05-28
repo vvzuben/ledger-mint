@@ -1,0 +1,70 @@
+.container {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.container h3 {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.container p {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content button {
+  background: none;
+  color: white;
+  height: 100%;
+  margin: 0;
+  padding: 20px;
+}
+
+.features {
+  bottom: 0;
+  position: fixed;
+  left: 25%;
+  right: 0;
+  text-align: center;
+  width: 50%;
+}
+
+.featureList {
+  display: flex;
+  margin: 0 0 0 20px;
+  justify-content: center;
+}
+
+.featureList li {
+  margin: 0;
+  padding: 0;
+}
+
+.featureList li button {
+  background: none;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: #39413A;
+  margin: 0 20px 0 0;
+  padding: 20px 20px;
+}
+
+.featureList li button.selected {
+  background-color: rgba(0, 0, 0, 0.05);
+}

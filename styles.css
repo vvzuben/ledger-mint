@@ -1,0 +1,100 @@
+:root {
+  --app-height: 100%;
+}
+
+@font-face {
+  font-family: Futura;
+  src: url("/fonts/Montserrat-Light.woff2") format("woff2"),
+    url("/fonts/Montserrat-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: Futura;
+  src: url("/fonts/Montserrat-Semibold.woff2") format("woff2"),
+    url("/fonts/Montserrat-Semibold.woff") format("woff");
+  font-weight: bold;
+}
+
+* {
+  font-family: Futura, sans-serif;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  height: var(--app-height);
+}
+
+a {
+  color: #c1ab70;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  background-attachment: fixed;
+  background-color: #333;
+  background-image: url(/images/bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFF;
+  margin: 0;
+}
+
+body::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url(/stars/7321-2.png);
+}
+
+button {
+  background: none;
+  background-color: white;
+  border: none;
+  color: black;
+  cursor: pointer;
+  transition: 0.25s transform;
+}
+
+button:disabled {
+  background-color: black;
+  color: white;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  transform: none !important;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}

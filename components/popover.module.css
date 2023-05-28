@@ -1,0 +1,58 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.arrow {
+  border-bottom: 10px solid #000;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  height: 0;
+  margin: 0 auto;
+  width: 0;
+}
+
+.content {
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 99999;
+}
+
+.content a {
+  color: #c1ab70;
+}
+
+.content a, .content span {
+  display: block;
+  padding: 20px;
+}
+
+.content a:hover {
+  background-color: #c1ab70;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.content span {
+  color: black;
+}
+
+.popover {
+  animation: fadeIn 0.5s;
+  min-width: 300px;
+  position: fixed;
+  transform-origin: left top;
+  z-index: 9999999;
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+}

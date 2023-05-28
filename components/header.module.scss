@@ -1,0 +1,299 @@
+@keyframes fadeIn {
+  0% {
+    backdrop-filter: blur(0);
+    opacity: 0;
+  }
+  100% {
+    backdrop-filter: blur(7px);
+    opacity: 1;
+  }
+}
+
+.arrow {
+  margin: 0 5px;
+  transition: 0.25s transform;
+}
+
+.arrow.expanded {
+  transform: rotate(90deg);
+}
+
+.closeButton {
+  position: fixed;
+  right: 10%;
+  top: 10%;
+}
+
+.connect {
+  background: none;
+  background-image: url(/images/user-icon.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 36px auto;
+  border: none;
+  color: transparent;
+  height: 36px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  width: 36px;
+}
+
+.connect.metamask {
+  background-image: url(/images/metamask-logo.svg);
+}
+
+.connect.polis {
+  background-image: url(/images/polis-logo.png);
+}
+
+.header {
+  background-color: black;
+  border-bottom: 1px #111 solid;
+  color: #39413a;
+  height: 88px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 99999;
+}
+
+.header:after {
+  background: rgba(0, 0, 0, 0.25);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 100%);
+  content: " ";
+  height: 10px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 88px;
+  z-index: 99999;
+}
+
+.header.transparent {
+  background-color: transparent !important;
+  border-bottom: 1px transparent solid;
+}
+
+.header.transparent:after {
+  display: none !important;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: normal;
+  height: 36px;
+  left: 20px;
+  margin: 0;
+  position: absolute;
+  top: 20px;
+  z-index: 999;
+}
+
+.logo a:hover {
+  text-decoration: none;
+}
+
+.logoButton {
+  align-items: center;
+  background: none;
+  display: flex;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.logo span {
+  color: #c1ab70;
+  font-size: 24px;
+  margin: 6px 0 10px 10px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menuIcon {
+  display: none;
+}
+
+.menuItem {
+  margin: 0 20px 0 0;
+}
+
+.mobileMenu {
+  align-items: center;
+  animation: fadeIn 0.35s;
+  animation-fill-mode: forwards;
+  background-color: rgba(0, 0, 0, 0.75);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  z-index: 99999999;
+}
+
+.mobileMenu a {
+  display: block;
+  font-size: 32px;
+  padding: 40px;
+}
+
+.mobileMenu a:hover {
+  text-decoration: none;
+}
+
+.mobileMenu .selected a {
+  color: white;
+}
+
+.nav {
+  position: absolute;
+  top: 25px;
+  width: 100%;
+}
+
+.nav ul {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.nav ul li a {
+  color: #ccc;
+  display: inline-block;
+  padding: 10px;
+}
+
+.nav ul li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav ul li.selected a {
+  color: #c1ab70;
+}
+
+.network {
+  align-items: center;
+  color: #999;
+  display: flex;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.networkError {
+  color: red;
+}
+
+.networkError button {
+  background: none;
+  background-image: url("/images/icons/warning-icon.svg");
+  background-position: center center;
+  background-size: auto 16px;
+  background-repeat: no-repeat;
+  height: 16px;
+  width: 16px;
+}
+
+.user {
+  align-items: center;
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 999;
+}
+
+.user button {
+  margin-left: 20px;
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.connectWalletContainer {
+  margin-top: 30px;
+}
+
+.connectWalletContainer .connectWallet {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media screen and (max-width: 800px) {
+  .connect {
+    background-size: auto 48px;
+    height: 48px;
+    width: 48px;
+  }
+
+  .header {
+    height: 78px;
+  }
+
+  .header:after {
+    background: rgba(0, 0, 0, 0.25);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 100%);
+    content: " ";
+    height: 10px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 78px;
+    z-index: 99999;
+  }
+
+  .logo {
+    background-image: url(/images/starledger-icon.svg);
+    background-repeat: no-repeat;
+    background-size: auto 48px;
+    height: 48px;
+    overflow: hidden;
+    padding: 0 0 0 42px;
+    top: 20px;
+  }
+
+  .logo a {
+    color: transparent;
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  .logoImage,
+  .logoSeparator {
+    display: none;
+  }
+
+  .menuIcon {
+    display: inline-block;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .networkName {
+    display: none;
+  }
+
+  .user {
+    right: 10px;
+    top: 16px;
+
+    button {
+      color: transparent !important;
+    }
+  }
+}

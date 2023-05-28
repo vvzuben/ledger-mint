@@ -1,0 +1,58 @@
+@keyframes zoom {
+  from {
+      transform: scale(0);
+  }
+  to {
+      transform: scale(1);
+  }
+}
+
+.connectionError {
+  align-items: center;
+  background-image: url(/stars/1.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.connectionError p {
+  margin-bottom: 40px;
+}
+
+.error {
+  color: red;
+  z-index : 100;
+}
+
+.note {
+  color: #666;
+}
+
+.notice {
+  color: #666;
+  text-align: center;
+}
+
+.tweet {
+  align-items: center;
+  background-color: #03a9f4;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  margin: 10px auto 0 auto;
+  padding: 10px 20px;
+}
+
+.tweet:hover {
+  background-color: #03afff;
+  text-decoration: none;
+}
+
+.tweet span {
+  color: white;
+  margin-left: 5px;
+}
